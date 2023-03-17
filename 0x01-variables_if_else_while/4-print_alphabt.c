@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	for (int i = 0 ; i < 26 ; i++) {
+	for (int i = 0 ; i < 26 ; i++)
+	{
 		if (i == 5 or i == 17)
 			continue;
 		putchar(97 + i);
