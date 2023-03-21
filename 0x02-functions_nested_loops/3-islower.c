@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- * print_alphabet -  prints form a-z
- * Return: alwayes 0
+ * _islower - function here
+ * @c: parameter of function
+ * Return: 1 if it is lower
+ * and return 0 else
  */
 
 
