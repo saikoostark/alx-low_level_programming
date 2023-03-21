@@ -11,7 +11,7 @@ int i, j;
 
 for (i = 0 ; i < 24 ; i++)
 {
-for (j = 0 ; j < 100 ; j++)
+for (j = 0 ; j < 60 ; j++)
 {
 _putchar('0' + i / 10 % 10);
 _putchar('0' + i % 10);
