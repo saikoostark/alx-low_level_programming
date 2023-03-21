@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet -  prints form a-z
+ *  print_alphabet_x10 -  prints form a-z
  * Return: alwayes 0
  */
 
 
-print_alphabet_x10()
+void print_alphabet_x10(void)
 {
 	int i;
 	int j;
