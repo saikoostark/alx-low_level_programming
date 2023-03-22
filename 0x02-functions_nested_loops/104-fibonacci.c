@@ -8,8 +8,9 @@
 
 int main(void)
 {
-unsigned long a = 0, b = 1, c, i;
-for(i=0; i<99; i++) {
+unsigned long long a = 0, b = 1, c, i;
+for(i=0; i<99; i++)
+{
 c = a + b;
 printf("%lu", c);
 a = b;
