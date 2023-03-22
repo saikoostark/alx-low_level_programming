@@ -30,7 +30,6 @@ _putchar(' ');
 _putchar('0' + k /100 % 10);
 _putchar('0' + k /10 % 10);
 _putchar('0' + k % 10);
-_putchar(',');
 }
 else if (k > 9)
 {
@@ -38,7 +37,6 @@ _putchar(' ');
 _putchar(' ');
 _putchar('0' + k /10 % 10);
 _putchar('0' + k % 10);
-_putchar(',');
 }
 else
 {
@@ -46,8 +44,11 @@ _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 _putchar('0' + k % 10);
-_putchar(',');
 }
+
+if (j != n)
+_putchar(',');
+
 }
 _putchar('\n');
 }
