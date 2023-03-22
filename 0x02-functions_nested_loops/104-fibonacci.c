@@ -12,7 +12,7 @@ unsigned long long a = 0, b = 1, c, i;
 for(i=0; i<99; i++)
 {
 c = a + b;
-printf("%lu", c);
+printf("%llu", c);
 a = b;
 b = c;
 if (i != 98)
