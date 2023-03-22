@@ -8,20 +8,15 @@
 
 int main(void)
 {
-unsigned long i, n1, sum, tem;
-
-n1 = 1, sum = 0;
-
-for (i = 1 ; i < 99 ; i++)
+unsigned long a = 0, b = 1, c, i;
+for(i=0; i<99; i++) {
+c = a + b;
+printf("%lu", c);
+a = b;
+b = c;
+if (i != 98)
 {
-printf("%lu", sum + n1);
-tem = n1;
-n1 = sum + n1;
-sum = tem;
-if (i != 50)
-{
-putchar(',');
-putchar(' ');
+printf(", ");
 }
 }
 putchar('\n');
