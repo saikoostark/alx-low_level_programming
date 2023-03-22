@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * print_times_table - function here
+ * @n: param1
  * Return: 0
  */
 
