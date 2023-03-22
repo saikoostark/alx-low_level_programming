@@ -21,6 +21,7 @@ k = i * j;
 if (j == 0)
 {
 _putchar('0');
+if (j != n)
 _putchar(',');
 continue;
 }
