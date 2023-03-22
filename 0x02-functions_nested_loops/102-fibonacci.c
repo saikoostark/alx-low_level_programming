@@ -19,8 +19,10 @@ tem = n1;
 n1 = sum + n1;
 sum = tem;
 if (i != 50)
+{
 putchar(',');
 putchar(' ');
+}
 }
 putchar('\n');
 return (0);
