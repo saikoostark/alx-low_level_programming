@@ -12,7 +12,7 @@ long int i, n1, sum, tem;
 
 n1 = 1, sum = 0;
 
-for (i = 1 ; i < 48 ; i++)
+for (i = 1 ; i < 51 ; i++)
 {
 printf("%ld", sum + n1);
 tem = n1;
