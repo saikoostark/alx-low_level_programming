@@ -17,7 +17,7 @@ for (i = 0; i < size; i++)
 	_putchar(' ');
 	
 	for (j = 0; j < i + 1 ; j++)
-	_putchar('*');
+	_putchar('#');
 
 	_putchar('\n');
 }
