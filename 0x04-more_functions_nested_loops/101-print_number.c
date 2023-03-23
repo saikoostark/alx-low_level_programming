@@ -9,35 +9,22 @@
 
 void print_number(int n)
 {
-int reversedNum, zer, x;
+int divisor = 1;
 
-reversedNum = 0, zer = 0, x = 1;
-while (n != 0)
+if (n < 0)
 {
-if (x && !(n % 10))
-{
-zer++;
-n /= 10;
-continue;
-}
-x = 0;
-reversedNum = reversedNum * 10 + n % 10;
-n /= 10;
-}
-if (reversedNum < 0)
-{
-reversedNum = -reversedNum;
+n = -n;
 _putchar('-');
 }
-if (!reversedNum)
-_putchar('0');
-while (reversedNum)
+
+while (n / divisor >= 10)
+divisor *= 10;
+
+while (divisor != 0)
 {
-_putchar('0' + reversedNum % 10);
-reversedNum /= 10;
-}
-while (zer--)
-{
-_putchar('0');
+int digit = (n / divisor) % 10;
+char digit_char = digit + '0';
+_putchar(digit_char);
+divisor /= 10;
 }
 }
