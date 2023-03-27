@@ -12,8 +12,7 @@
 void puts2(char *str)
 {
 
-	do
-	{
+	do {
 		if (!*str)
 			break;
 		_putchar(*str);
