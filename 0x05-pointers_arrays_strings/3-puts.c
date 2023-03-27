@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- * void _puts(char *str);
- - function
+ * _puts - function
  * @str: param1
  *
  * Return: On success 1.
