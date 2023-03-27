@@ -2,7 +2,8 @@
 
 /**
  * swap_int - function
- * @n: paramt
+ * @a: param1
+ * @b: param2
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
