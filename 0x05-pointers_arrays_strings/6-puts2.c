@@ -22,4 +22,7 @@ void puts2(char *str)
 		if (!*str)
 			break;
 	} while (*(++str));
+
+
+	_putchar('\n');
 }
