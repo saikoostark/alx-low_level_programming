@@ -12,6 +12,9 @@
 void _puts(char *str)
 {
 	do {
+		if (!*str)
+			break;
+
 		_putchar(*str);
 	} while (*(++str));
 
