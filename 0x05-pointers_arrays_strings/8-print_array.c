@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * puts_half - function
- * @str: param1
+ * print_array - function
+ * @a: array
+ * @n: size
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
