@@ -16,7 +16,7 @@ char *leet(char *s)
 
 	while (s[i])
 	{
-		for (j = 0; j < 5; i++)
+		for (j = 0; j < 5; j++)
 		{
 			if (s[i] == a[j] || s[i] == a[j] - 32)
 				s[i] = n[j];
