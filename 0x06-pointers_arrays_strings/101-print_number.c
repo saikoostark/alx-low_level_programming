@@ -12,7 +12,7 @@ void print_number(int n)
 {
 
 	int i = 1;
-	unsigned int m = 0, x = 0;
+	unsigned int m = 0, l = 0, x = 0;
 
 	if (n == 0)
 	{
@@ -21,11 +21,15 @@ void print_number(int n)
 	}
 	else if (n < 0)
 	{
+		m = -n;
+		l = -n;
 		_putchar('-');
-		n = -n;
 	}
-
-	m = n;
+	else
+	{
+		m = (unsigned int)n;
+		l = (unsigned int)n;
+	}
 
 	while (m)
 	{
@@ -37,8 +41,8 @@ void print_number(int n)
 
 	while (i)
 	{
-		x += ((n % 10) * i);
-		n /= 10;
+		x += ((l % 10) * i);
+		l /= 10;
 		i /= 10;
 	}
 
