@@ -15,7 +15,7 @@ int main(void)
 	_putchar('\n');
 	print_number(0);
 	_putchar('\n');
-	print_number(-564398);
+	print_number(-140);
 	_putchar('\n');
 	return (0);
 }

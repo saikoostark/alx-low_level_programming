@@ -10,45 +10,16 @@
 
 void print_number(int n)
 {
+	unsigned int num = n;
 
-	int i = 1;
-	unsigned int m = 0, l = 0, x = 0;
-
-	if (n == 0)
+	if (n < 0)
 	{
-		_putchar('0');
-		return;
-	}
-	else if (n < 0)
-	{
-		m = -n;
-		l = -n;
 		_putchar('-');
-	}
-	else
-	{
-		m = (unsigned int)n;
-		l = (unsigned int)n;
+		num = -num;
 	}
 
-	while (m)
-	{
-		i *= 10;
-		m /= 10;
-	}
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-	i /= 10;
-
-	while (i)
-	{
-		x += ((l % 10) * i);
-		l /= 10;
-		i /= 10;
-	}
-
-	while (x)
-	{
-		_putchar('0' + x % 10);
-		x /= 10;
-	}
+	_putchar((num % 10) + '0');
 }
