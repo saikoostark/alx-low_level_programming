@@ -11,17 +11,14 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, sum1, sum2;
-
-	i = sum1 = sum2 = 0;
-
-	while (*(s1 + i))
-		sum1 += *(s1 + i++);
-
-	i = 0;
-
-	while (*(s2 + i))
-		sum2 += *(s2 + i++);
-
-	return (sum1 - sum2);
+	while (*s1 && *s2)
+	{
+		if (*s1 - *s2 != 0)
+		{
+			return (*s1 - *s2);
+		}
+		s1++;
+		s2++;
+	}
+	return (0);
 }
