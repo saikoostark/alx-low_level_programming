@@ -3,7 +3,6 @@
 /**
  * string_toupper - function
  * @str : param1
- * @n : param 2
  *Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
