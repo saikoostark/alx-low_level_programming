@@ -5,7 +5,8 @@
  * _strcat - function
  * @dest : param1
  * @src : param 2
- * Return : pointer
+ *Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 char *_strcat(char *dest, char *src)
