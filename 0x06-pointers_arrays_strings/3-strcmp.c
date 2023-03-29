@@ -23,10 +23,5 @@ int _strcmp(char *s1, char *s2)
 	while (*(s2 + i))
 		sum2 += *(s2 + i++);
 
-	if (sum1 - sum2 > 0)
-		return (15);
-	else if (sum1 - sum2 < 0)
-		return (-15);
-	else
-		return (0);
+	return (sum1 - sum2);
 }
