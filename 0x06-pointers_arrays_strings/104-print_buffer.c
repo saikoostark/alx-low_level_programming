@@ -41,10 +41,8 @@ void print_buffer(char *b, int size)
 
 		for (c = 0; k < size && c < 10; c++, k++)
 		{
-			if (b[k] == '\n')
-				putchar('\0');
-			else
-				putchar(b[k]);
+
+			printf("%c", b[k]);
 		}
 
 		putchar('\n');
