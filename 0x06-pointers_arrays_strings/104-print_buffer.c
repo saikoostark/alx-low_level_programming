@@ -42,14 +42,7 @@ void print_buffer(char *b, int size)
 		for (c = 0; k < size && c < 10; c++, k++)
 		{
 
-			if (b[k] >= 32 && b[k] <= 126)
-			{
-				printf("%c", b[k]);
-			}
-			else
-			{
-				printf(".");
-			}
+			putchar(b[k]);
 		}
 
 		putchar('\n');
