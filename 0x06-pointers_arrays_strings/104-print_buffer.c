@@ -10,54 +10,41 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-#include <stdio.h>
-
 void print_buffer(char *b, int size)
 {
-	int i, j;
-
-	if (size <= 0)
-	{
-		printf("\n");
-		return;
-	}
+	int i = 0, j = 0, a = 0, k = 0, c = 0;
 
 	for (i = 0; i < size; i += 10)
 	{
 		printf("%08x: ", i);
-
-		for (j = i; j < i + 10; j += 2)
+		for (a = 0; a < 10; a++)
 		{
+
 			if (j < size)
 			{
-				printf("%02x", (unsigned char)b[j]);
+				printf("%02x", b[j]);
+				j++;
 			}
-			else
-			{
+			else if (a < 10)
 				printf("  ");
-			}
 
-			if (j + 1 < size)
+			a++;
+
+			if (j < size)
 			{
-				printf("%02x ", (unsigned char)b[j + 1]);
+				printf("%02x ", b[j]);
+				j++;
 			}
-			else if (j < size)
-			{
-				printf("%02x ", (unsigned char)b[j]);
-			}
-			else
-			{
+			else if (a < 10)
 				printf("   ");
-			}
 		}
 
-		printf(" ");
-
-		for (j = i; j < i + 10 && j < size; j++)
+		for (c = 0; k < size && c < 10; c++, k++)
 		{
-			if (b[j] >= 32 && b[j] <= 126)
+
+			if (b[k] >= 32 && b[k] <= 126)
 			{
-				printf("%c", b[j]);
+				printf("%c", b[k]);
 			}
 			else
 			{
@@ -65,6 +52,6 @@ void print_buffer(char *b, int size)
 			}
 		}
 
-		printf("\n");
+		putchar('\n');
 	}
 }
