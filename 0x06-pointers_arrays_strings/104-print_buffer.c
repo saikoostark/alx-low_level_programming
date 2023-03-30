@@ -42,7 +42,10 @@ void print_buffer(char *b, int size)
 		for (c = 0; k < size && c < 10; c++, k++)
 		{
 
-			putchar(b[k]);
+			if (isprint(b[k]))
+				printf("%c", b[k]);
+			else
+				printf(".");
 		}
 
 		putchar('\n');
