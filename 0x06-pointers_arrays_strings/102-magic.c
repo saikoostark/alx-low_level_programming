@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - main function
+ * Return: reurn 0 if success
+ * else return 1
+ */
+
 int main(void)
 {
 	int n;
