@@ -1,6 +1,19 @@
 #include <stdio.h>
+
 /**
- * palindrome_helper - checks recursively the input from is_prime_number
+ * get_size - function
+ * @s: 1st param
+ */
+int get_size(char *s)
+{
+	if (!*s)
+		return 0;
+
+	return (1 + get_size(s + 1));
+}
+
+/**
+ * palindrome_helper - function
  * @s: 1st param
  * @start: 2nd param
  * @end: 3rd end
@@ -17,17 +30,14 @@ int palindrome_helper(char *s, int start, int end)
 		return (0);
 }
 /**
- * is_palindrome - checks if the number is a prime number
+ * is_palindrome - function
  * @s: 1st param
  * Return: 1 if n is a prime, else return 0 otherwise.
  */
 int is_palindrome(char *s)
 {
 
-	int n = 0;
-
-	while (*(s + n))
-		n++;
+	int n = get_size(s);
 
 	return (palindrome_helper(s, 0, n - 1));
 }
