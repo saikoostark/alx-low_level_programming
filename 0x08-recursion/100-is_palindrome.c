@@ -3,11 +3,12 @@
 /**
  * get_size - function
  * @s: 1st param
+ * Return: 1 if n is a prime, else return 0 otherwise.
  */
 int get_size(char *s)
 {
 	if (!*s)
-		return 0;
+		return (0);
 
 	return (1 + get_size(s + 1));
 }
