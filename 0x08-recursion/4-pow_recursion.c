@@ -1,8 +1,9 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * factorial - writes the character c to stdout
- * @n: 1st paramter
+ * _pow_recursion - writes the character c to stdout
+ * @x: 1st paramter
+ * @y: 2nd paramter
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
