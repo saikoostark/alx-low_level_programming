@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
 	}
 
 	x = atoi(argv[1]);
-	while (x != 0)
+	while (x > 0)
 	{
 
 		for (i = 0; i < 5; i++)
