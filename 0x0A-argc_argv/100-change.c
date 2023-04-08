@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
 
 	if (argc < 2)
 	{
-		printf("Errkor\n");
+		printf("Error\n");
 		return (1);
 	}
 
