@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
 	int i = 0, x = 0, j = 0;
 	int arr[] = {25, 10, 2, 5, 1};
 
-	if (argc != 2)
+	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
