@@ -1,25 +1,22 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-char *str_concat(char *, char *);
-
 /**
- * main - check the code .
+ * main - check the code for ALX School students.
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int ac, char *av[])
 {
 	char *s;
 
-	s = str_concat("Hello", "12");
+	s = argstostr(ac, av);
 	if (s == NULL)
 	{
-		printf("failed\n");
 		return (1);
 	}
-	printf("%s\n", s);
+	printf("%s", s);
 	free(s);
-
 	return (0);
 }

@@ -33,21 +33,26 @@ char *argstostr(int ac, char **av)
 	char *str;
 
 	for (i = 0; i < ac; i++)
+	{
 		sum += _strlen(av[i]);
+	}
 
-	str = malloc(sizeof(char) * sum + (ac));
+	str = malloc(sizeof(char) * sum + ac + 1);
 
 	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
+		j = 0;
 		while (*(av[i] + j))
 		{
-			str[k++] = av[i][j];
+			str[k] = av[i][j];
+			k++, j++;
 		}
-		str[k++] = '\0';
+		str[k] = '\n';
+		k++;
 	}
-
+	str[k] = '\0';
 	return (str);
 }
