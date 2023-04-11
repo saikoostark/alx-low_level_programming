@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -11,8 +10,7 @@
 
 void _puts(char *str)
 {
-	do
-	{
+	do {
 		if (!*str)
 			break;
 
