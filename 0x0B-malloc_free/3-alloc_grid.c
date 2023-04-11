@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * str_concat - check the code
- * @s1 : param
- * @s2 : param
+ * alloc_grid - check the code
+ * @width : param
+ * @height : param
  * Return: Always 0.
  */
 
@@ -18,9 +18,13 @@ int **alloc_grid(int width, int height)
 
 	ptr = malloc(sizeof(*ptr) * height);
 
+	if (ptr == NULL)
+		return (ptr);
 	for (i = 0; i < height; i++)
 	{
 		ptr[i] = calloc(width, sizeof(int));
+		if (ptr[i] == NULL)
+			return (ptr[i]);
 	}
 
 	return ptr;
