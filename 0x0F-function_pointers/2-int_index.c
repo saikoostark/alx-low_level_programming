@@ -6,7 +6,7 @@
  *
  * @array: param
  * @size: param
- * @action: cmp
+ * @cmp: param
  * Return: retun nothing at all
  */
 
@@ -14,7 +14,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	size_t i;
 
-	if (array && cmp && size > -1)
+	if (array && cmp && size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{
