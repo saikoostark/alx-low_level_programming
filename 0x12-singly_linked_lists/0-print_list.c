@@ -1,24 +1,6 @@
 #include "lists.h"
 
 /**
- * _strlen - function
- *
- * @str: param
- * Return: reurn size
- */
-int _strlen(char *str)
-{
-	int i = 0;
-
-	if (!str)
-		return (0);
-
-	while (*(str + i))
-		i++;
-	return (i);
-}
-
-/**
  * print_list - function
  *
  * @h: param
@@ -26,21 +8,19 @@ int _strlen(char *str)
  */
 size_t print_list(const list_t *h)
 {
-	list_t *ptr = (list_t *)h;
-	int strLen;
+
 	int listSize = 0;
 
-	while (ptr != NULL)
+	while (h != NULL)
 	{
-		strLen = _strlen(ptr->str);
-		if (strLen == 0)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
 		{
-			printf("[%d] %s\n", strLen, ptr->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		listSize++;
-		ptr = ptr->next;
+		h = h->next;
 	}
 
 	return (listSize);
