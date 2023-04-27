@@ -3,10 +3,8 @@
 void fun(void) __attribute__((constructor));
 
 /**
- * test - function with constructor
- *
- * Description: print string
- * Return: na
+ * fun - function
+ * Return: nothing
  */
 void fun(void)
 {
