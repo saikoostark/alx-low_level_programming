@@ -32,7 +32,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	len = 0;
 	while (*(text_content + len++))
-		;
+		len++;
 
 	nwrote = write(fp, text_content, len);
 
