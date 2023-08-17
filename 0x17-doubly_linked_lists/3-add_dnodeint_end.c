@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - doubly linked list function
+ * add_dnodeint_end - doubly linked list function
  * @head: param
  * @n: param
  * Return: returning something
